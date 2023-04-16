@@ -1,0 +1,15 @@
+@import "../../styles/variable.scss";
+
+.form_contorl{
+    margin-bottom: 8px;
+    padding: 4px;
+    label{
+        padding-bottom: 8px;
+        &.label{
+            font-size: 14px;
+        }
+    }
+    .custom_select{
+        margin-top: 4px;
+    }
+}

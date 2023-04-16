@@ -1,0 +1,10 @@
+@import "../../styles/variable.scss";
+
+.btnWrapper{
+    display: flex;
+    justify-content: flex-end;
+    button{
+        text-transform: uppercase;
+        padding: 10px 24px;
+    }
+}

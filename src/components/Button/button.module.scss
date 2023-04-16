@@ -1,0 +1,68 @@
+@import "../../styles//variable.scss";
+
+.button{
+    padding: 8px 16px;
+    border:none;
+    font-size: 14px;
+    margin:6px 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    &.roundedFull{
+        border-radius: 25px;
+    }
+    &.roundedMd{
+        border-radius: 6px;
+    }
+    &.roundedxs{
+        border-radius: 3px;
+    }
+&.blue{
+    background: $blue;
+    color: $white;
+    &:hover{
+        background: transparentize($blue,0.1);
+    }
+}
+&.outlineBlue{
+    background: $white;
+    border:1px solid $blue;
+    color: $blue;
+    &:hover{
+        background: transparentize($blue,0.1);
+        color: $white;
+    }
+}
+&.lightPurple{
+    background: $lightPurple;
+    color: $white;
+    &:hover{
+        background: transparentize($lightPurple,0.1);
+    }
+}
+&.outlineLightPurple{
+    background: $white;
+    border:1px solid $lightPurple;
+    color: $lightPurple;
+    &:hover{
+        background: transparentize($lightPurple,0.1);
+        color: $white;
+    }
+}
+&.red{
+    background: $red;
+    color: $white;
+    &:hover{
+        background: transparentize($red,0.1);
+    }
+}
+&.outlineRed{
+    background: $white;
+    border:1px solid $red;
+    color: $red;
+    &:hover{
+        background: transparentize($red,0.1);
+        color: $white;
+    }
+}
+}
+

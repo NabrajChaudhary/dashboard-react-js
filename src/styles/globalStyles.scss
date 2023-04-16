@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import './variable.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+//style code for side navbar
+nav {
+    ul {
+      list-style: none;
+      li {
+        cursor: pointer;
+        padding: 4px;
+        &+li{
+            a{
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              color: transparentize($black,0.2);
+              svg{
+                margin-right: 12px;
+              }
+                &.active,&:hover{
+                    border: none;
+                    
+                }
+            }
+        }
+
+        a {
+          text-decoration: none;
+          display: block;
+          font-size: 16px;
+          padding:0.5rem;
+          border-radius: 2px;
+          color: $black;
+          &.active,&:hover {
+           
+            background: $blue;
+            height: 100%;
+            width: 100%;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  
+
+  //this is teh style for the react-select that is used globally in entire app
+  .custom_Select{
+    margin-top: 8px;
+    .custom_Select__control{
+      min-height: auto;
+      outline: none;
+      cursor: pointer;
+      &:hover{
+        border-color: none;
+      }
+      .custom_Select__value-container{
+        padding: 4px 6px;
+        .custom_Select__placeholder{
+          font-size: 14px;
+        }
+        .custom_Select__single-value{
+          font-size: 14px;
+        }
+      }
+      .custom_Select__indicators{
+        display: none;
+      }
+    }
+    .custom_Select__menu{
+      margin: 0;
+      border-radius: 0;
+      .custom_Select__menu-list{
+        padding: 0;
+        // .custom_Select__option{}
+      }
+    }
+  }
+
+// .active{
+//     color: yellow;
+// }

@@ -1,0 +1,49 @@
+@import '../../styles/variable.scss';
+
+.pageTop{
+    background: $white;
+    padding: 1rem;
+    .topBody{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .select{
+            width: 340px;
+            // @media(max-width:991px){
+            //     width: 280px;
+            // }
+        }
+        .scrollFilter{
+            width: 340px;
+        }
+        &+.topBody{
+            margin-top: 24px;
+        }
+    }
+    .bottomBody{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 24px;
+        .selectGroup{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .cDatePicker{
+                width: 220px;
+            }
+            .select{
+                width: 220px;
+                cursor: pointer;
+            }
+        }
+        .buttonGroup{
+           button{
+            padding: 10px 24px;
+            text-transform: uppercase;
+           } 
+        }
+    }
+    
+}

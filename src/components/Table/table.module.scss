@@ -1,0 +1,42 @@
+@import '../../styles/variable.scss';
+
+.tableWrapper{
+    width: 100%;
+    overflow-x: scroll;
+    table{
+        width: 1460px;
+        background: $white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-spacing: 1px;
+        
+        thead{
+            background: $grayWhite;
+            tr{
+                th{
+                    padding:10px 12px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-align: start;
+                }
+                &:first-child{
+                    display: none;
+                }
+            }
+        }
+        tbody{
+            background-color:$tableBlue;
+            tr{
+                cursor: pointer;
+                td{
+                    padding:8px 12px;
+                    font-size: 14px;
+                    text-align: start;
+                    color: $black;
+                }
+                &:hover{
+                    background: $lightGren;
+                }
+            }
+        }
+    }
+}

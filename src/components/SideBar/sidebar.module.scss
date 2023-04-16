@@ -1,0 +1,36 @@
+@import '../../styles/variable.scss';
+
+.sideNav{
+    padding: 1rem 0.75rem;
+    width: 240px;
+    position: fixed;
+    background: $green;
+    height: 100vh;
+    nav{
+       .navList{
+        list-style: none;
+        .navItems{
+            padding: 12px;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                color: $black;
+                // Set default color to black
+            }
+            &:hover{
+                background: $blue;
+                border-radius: 6px;
+            }
+            
+            &.active {
+                // Set color to red and background color to blue for active link
+                a {
+                    color: red;
+                }
+                background: blue;
+            }
+        }
+       } 
+    }
+}

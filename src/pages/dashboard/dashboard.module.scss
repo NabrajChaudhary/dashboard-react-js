@@ -1,0 +1,53 @@
+@import "../../styles/variable.scss";
+
+.dashboardData{
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sumTotal{
+    width: 80%;
+    margin: auto;
+    .singleElem{
+        margin-left:10px;
+        background: $white;
+        padding: 1rem;
+        width: 320px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        @media(max-width:991px){
+            width: 280px;
+        }
+        p{
+        font-size: 16px;
+        &.label{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        }
+    }
+    .boxElem{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+        .seriesElement{
+            background: $white;
+            padding: 1rem;
+            width: 320px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            @media(max-width:991px){
+                width: 280px;
+            }
+            p{
+            font-size: 16px;
+            &.label{
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "../../styles/variable.scss";
+
+.formElement{
+     // padding: 1rem;
+     padding: 4px;
+     margin-bottom: 8px;
+     display: flex;
+     flex-direction: column;
+     label{
+         font-size: 14px;
+        padding-bottom: 8px;
+     }
+     .scrollFilteComp{
+        border: 1px solid $borderGray;
+        max-width: 340px;
+        border-radius: 4px;
+        height: 100px;
+        overflow-y: scroll;
+        ul{
+            list-style: none;
+            li{
+                padding:4px 8px;
+                cursor: pointer;
+                &:hover{
+                    background: $blue;
+                    color: $white;
+                }
+            }
+        }
+     }
+}
